@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB69B1471C86DD68001625CC /* libCurassow.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB69B1431C86DD68001625CC /* libCurassow.dylib */; };
+		FB69B1481C86DD68001625CC /* libInquiline.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB69B1441C86DD68001625CC /* libInquiline.dylib */; };
+		FB69B1491C86DD68001625CC /* libJay.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB69B1451C86DD68001625CC /* libJay.dylib */; };
+		FB69B14A1C86DD68001625CC /* libNest.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB69B1461C86DD68001625CC /* libNest.dylib */; };
+		FB7CCFA91C86DDC500BC5114 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFA61C86DDC500BC5114 /* Json.swift */; };
+		FB7CCFAA1C86DDC500BC5114 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFA71C86DDC500BC5114 /* main.swift */; };
+		FB7CCFAB1C86DDC500BC5114 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFA81C86DDC500BC5114 /* Server.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB69B1301C86DD43001625CC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FB69B1321C86DD43001625CC /* Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Server; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB69B1431C86DD68001625CC /* libCurassow.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCurassow.dylib; path = ../.build/debug/libCurassow.dylib; sourceTree = "<group>"; };
+		FB69B1441C86DD68001625CC /* libInquiline.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libInquiline.dylib; path = ../.build/debug/libInquiline.dylib; sourceTree = "<group>"; };
+		FB69B1451C86DD68001625CC /* libJay.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libJay.dylib; path = ../.build/debug/libJay.dylib; sourceTree = "<group>"; };
+		FB69B1461C86DD68001625CC /* libNest.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libNest.dylib; path = ../.build/debug/libNest.dylib; sourceTree = "<group>"; };
+		FB7CCFA61C86DDC500BC5114 /* Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Json.swift; path = ../App/Json.swift; sourceTree = SOURCE_ROOT; };
+		FB7CCFA71C86DDC500BC5114 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../App/main.swift; sourceTree = SOURCE_ROOT; };
+		FB7CCFA81C86DDC500BC5114 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Server.swift; path = ../App/Server.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB69B12F1C86DD43001625CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB69B14A1C86DD68001625CC /* libNest.dylib in Frameworks */,
+				FB69B1491C86DD68001625CC /* libJay.dylib in Frameworks */,
+				FB69B1471C86DD68001625CC /* libCurassow.dylib in Frameworks */,
+				FB69B1481C86DD68001625CC /* libInquiline.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB69B1291C86DD43001625CC = {
+			isa = PBXGroup;
+			children = (
+				FB69B13C1C86DD4E001625CC /* Dependencies */,
+				FB69B1341C86DD43001625CC /* Server */,
+				FB69B1331C86DD43001625CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB69B1331C86DD43001625CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB69B1321C86DD43001625CC /* Server */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB69B1341C86DD43001625CC /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				FB7CCFA61C86DDC500BC5114 /* Json.swift */,
+				FB7CCFA71C86DDC500BC5114 /* main.swift */,
+				FB7CCFA81C86DDC500BC5114 /* Server.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		FB69B13C1C86DD4E001625CC /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				FB69B1431C86DD68001625CC /* libCurassow.dylib */,
+				FB69B1441C86DD68001625CC /* libInquiline.dylib */,
+				FB69B1451C86DD68001625CC /* libJay.dylib */,
+				FB69B1461C86DD68001625CC /* libNest.dylib */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB69B1311C86DD43001625CC /* Server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB69B1391C86DD43001625CC /* Build configuration list for PBXNativeTarget "Server" */;
+			buildPhases = (
+				FB7CCFAC1C86DE2000BC5114 /* Build Swift Dependencies */,
+				FB69B12E1C86DD43001625CC /* Sources */,
+				FB69B12F1C86DD43001625CC /* Frameworks */,
+				FB69B1301C86DD43001625CC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Server;
+			productName = Server;
+			productReference = FB69B1321C86DD43001625CC /* Server */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB69B12A1C86DD43001625CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = cjwirth;
+				TargetAttributes = {
+					FB69B1311C86DD43001625CC = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FB69B12D1C86DD43001625CC /* Build configuration list for PBXProject "Server" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FB69B1291C86DD43001625CC;
+			productRefGroup = FB69B1331C86DD43001625CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB69B1311C86DD43001625CC /* Server */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FB7CCFAC1C86DE2000BC5114 /* Build Swift Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Swift Dependencies";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$(SRCROOT)\"\nswift build";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB69B12E1C86DD43001625CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7CCFAA1C86DDC500BC5114 /* main.swift in Sources */,
+				FB7CCFAB1C86DDC500BC5114 /* Server.swift in Sources */,
+				FB7CCFA91C86DDC500BC5114 /* Json.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FB69B1371C86DD43001625CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB69B1381C86DD43001625CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FB69B13A1C86DD43001625CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../.build/debug/";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../.build/debug/";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB69B13B1C86DD43001625CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../.build/debug/";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/../.build/debug/";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB69B12D1C86DD43001625CC /* Build configuration list for PBXProject "Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB69B1371C86DD43001625CC /* Debug */,
+				FB69B1381C86DD43001625CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB69B1391C86DD43001625CC /* Build configuration list for PBXNativeTarget "Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB69B13A1C86DD43001625CC /* Debug */,
+				FB69B13B1C86DD43001625CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB69B12A1C86DD43001625CC /* Project object */;
+}
