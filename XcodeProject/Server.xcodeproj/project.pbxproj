@@ -43,6 +43,7 @@
 		FB7CCFAD1C86E14700BC5114 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../App/User.swift; sourceTree = SOURCE_ROOT; };
 		FB7CCFB11C86E24A00BC5114 /* Middleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Middleware.swift; path = ../App/Middleware.swift; sourceTree = SOURCE_ROOT; };
 		FB7CCFB31C86E28000BC5114 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = ../App/Router.swift; sourceTree = SOURCE_ROOT; };
+		FB7CCFB51C86E77300BC5114 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 		FB69B1291C86DD43001625CC = {
 			isa = PBXGroup;
 			children = (
+				FB7CCFB51C86E77300BC5114 /* Package.swift */,
 				FB69B13C1C86DD4E001625CC /* Dependencies */,
 				FB69B1341C86DD43001625CC /* Server */,
 				FB69B1331C86DD43001625CC /* Products */,
