@@ -18,7 +18,7 @@ class Router {
     func handle(request: RequestType) -> ResponseType {
         // TODO: Get URL Parameter Parsing
         // eg: /users/:id --> will have a String parameter called "id"
-        guard let method = Method(rawValue: request.method),
+        guard let method = request.HTTPMethod,
             let route = routes[request.path]?[method] else {
                 return Error.NotImplemented
         }

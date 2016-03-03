@@ -8,7 +8,11 @@ enum Method: String {
     case Delete = "DELETE"
 }
 
-
+extension RequestType {
+    var HTTPMethod: Method? {
+        return Method(rawValue: method)
+    }
+}
 
 enum Status: Int {
     case OK = 200
@@ -17,6 +21,10 @@ enum Status: Int {
     case NotFound = 404
     case ServerError = 500
     case NotImplemented = 501
+
+    var statusLine: String {
+        return "HTTP/1.1 \(rawValue), \(reasonPhrase)"
+    }
 
     var reasonPhrase: String {
         switch self {
@@ -27,10 +35,6 @@ enum Status: Int {
         case .ServerError: return "Internal Server Error"
         case .NotImplemented: return "Not Implemented"
         }
-    }
-
-    var statusLine: String {
-        return "HTTP/1.1 \(rawValue), \(reasonPhrase)"
     }
 }
 
@@ -73,7 +77,6 @@ struct Response: ResponseType {
         self.status = status
         self.body = body
     }
-
 }
 
 
