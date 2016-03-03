@@ -18,6 +18,7 @@
 		FB7CCFAE1C86E14700BC5114 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFAD1C86E14700BC5114 /* User.swift */; };
 		FB7CCFB21C86E24A00BC5114 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFB11C86E24A00BC5114 /* Middleware.swift */; };
 		FB7CCFB41C86E28000BC5114 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFB31C86E28000BC5114 /* Router.swift */; };
+		FB80EBE21C886BF3006789B0 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80EBE11C886BF3006789B0 /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,7 @@
 		FB7CCFB11C86E24A00BC5114 /* Middleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Middleware.swift; path = ../App/Middleware.swift; sourceTree = SOURCE_ROOT; };
 		FB7CCFB31C86E28000BC5114 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = ../App/Router.swift; sourceTree = SOURCE_ROOT; };
 		FB7CCFB51C86E77300BC5114 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
+		FB80EBE11C886BF3006789B0 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pokemon.swift; path = ../App/Pokemon.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		FB69B13C1C86DD4E001625CC /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				FB80EBE11C886BF3006789B0 /* Pokemon.swift */,
 				FB69B1431C86DD68001625CC /* libCurassow.dylib */,
 				FB69B1441C86DD68001625CC /* libInquiline.dylib */,
 				FB69B1451C86DD68001625CC /* libJay.dylib */,
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7CCFA91C86DDC500BC5114 /* Json.swift in Sources */,
+				FB80EBE21C886BF3006789B0 /* Pokemon.swift in Sources */,
 				FB25F45C1C885E9F005DE67C /* ResourceController.swift in Sources */,
 				FB7CCFAE1C86E14700BC5114 /* User.swift in Sources */,
 				FB7CCFAB1C86DDC500BC5114 /* Response.swift in Sources */,
