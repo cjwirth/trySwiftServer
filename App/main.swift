@@ -20,7 +20,7 @@ router.post("/users") { request in
     }
 
     users.append(user)
-    return Response(status: .OK, body: json)
+    return Response(status: .OK, body: try user.jsonString())
 }
 
 router.get("/secret", handler: SecretPasswordAuthMiddleware({ request in
