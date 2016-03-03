@@ -9,7 +9,7 @@ var users: [User] = [
 
 let router = Router()
 router.get("/users") { request in
-    let usersJson = try users.serialize()
+    let usersJson = try users.jsonString()
     return Response(status: .OK, body: usersJson)
 }
 

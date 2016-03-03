@@ -57,7 +57,7 @@ extension Jsonable {
 // Don't use this. Get real JSON handling...
 extension Array where Element: Jsonable {
 
-    func serialize() throws -> String {
+    func jsonString() throws -> String {
         let strings = try map { try $0.jsonString() }
         let combined = strings.reduce("") { sofar, new in
             if sofar.isEmpty {
