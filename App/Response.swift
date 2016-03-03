@@ -12,6 +12,7 @@ enum Method: String {
 
 enum Status: Int {
     case OK = 200
+    case BadRequest = 400
     case Unauthorized = 401
     case NotFound = 404
     case ServerError = 500
@@ -20,6 +21,7 @@ enum Status: Int {
     var reasonPhrase: String {
         switch self {
         case OK: return "OK"
+        case .BadRequest: return "Bad Request"
         case .Unauthorized: return "Unauthorized"
         case .NotFound: return "Not Found"
         case .ServerError: return "Internal Server Error"
@@ -35,12 +37,14 @@ enum Status: Int {
 
 
 enum Error: ResponseType, ErrorType {
+    case BadRequest
     case Unauthorized
     case InternalServerError
     case NotImplemented
 
     var status: Status {
         switch self {
+        case .BadRequest: return .BadRequest
         case .Unauthorized: return .Unauthorized
         case .InternalServerError: return .ServerError
         case .NotImplemented: return .NotImplemented
@@ -70,10 +74,6 @@ struct Response: ResponseType {
         self.body = body
     }
 
-    init(status: Status, json: Json) throws {
-        self.status = status
-        self.body = try json.serialize()
-    }
 }
 
 

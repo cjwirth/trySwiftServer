@@ -6,10 +6,18 @@ class Router {
     var routes: [String: [Method: Handler]] = [:]
 
     func route(method: Method, path: String, handler: Handler) {
-        routes[path] = [method: handler]
+        if let existing = routes[path] {
+            var editing = existing
+            editing[method] = handler
+            routes[path] = editing
+        } else {
+            routes[path] = [method: handler]
+        }
     }
 
     func handle(request: RequestType) -> ResponseType {
+        // TODO: Get URL Parameter Parsing
+        // eg: /users/:id --> will have a String parameter called "id"
         guard let method = Method(rawValue: request.method),
             let route = routes[request.path]?[method] else {
                 return Error.NotImplemented
