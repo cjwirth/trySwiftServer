@@ -82,11 +82,11 @@
 		FB69B1341C86DD43001625CC /* Server */ = {
 			isa = PBXGroup;
 			children = (
-				FB7CCFA71C86DDC500BC5114 /* main.swift */,
-				FB7CCFB31C86E28000BC5114 /* Router.swift */,
 				FB7CCFA61C86DDC500BC5114 /* Json.swift */,
-				FB7CCFA81C86DDC500BC5114 /* Response.swift */,
+				FB7CCFA71C86DDC500BC5114 /* main.swift */,
 				FB7CCFB11C86E24A00BC5114 /* Middleware.swift */,
+				FB7CCFA81C86DDC500BC5114 /* Response.swift */,
+				FB7CCFB31C86E28000BC5114 /* Router.swift */,
 				FB7CCFAD1C86E14700BC5114 /* User.swift */,
 			);
 			path = Server;
