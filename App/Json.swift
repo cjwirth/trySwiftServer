@@ -1,18 +1,19 @@
-// import Foundation
 import Jay
 
-let J = Jay()
-
-enum JsonError: ErrorType {
-    case InvalidJson
-    case CouldNotDeserialize
-}
 
 protocol Jsonable {
-    func jsonString() throws -> String
+    // Need to be implemented
     func serialized() -> [String: Any]
     static func deserialized(json: JsonObject) throws -> Self
+
+    // Have default implementations
+    func jsonString() throws -> String
+    static func deserialize(json: String) throws -> [Self]
 }
+
+
+
+
 
 extension Jsonable {
 
@@ -53,6 +54,13 @@ extension Jsonable {
     }
 
 }
+
+enum JsonError: ErrorType {
+    case InvalidJson
+    case CouldNotDeserialize
+}
+
+let J = Jay()
 
 // Don't use this. Get real JSON handling...
 extension Array where Element: Jsonable {
