@@ -23,7 +23,7 @@ enum Status: Int {
     case NotImplemented = 501
 
     var statusLine: String {
-        return "HTTP/1.1 \(rawValue), \(reasonPhrase)"
+        return "\(rawValue) \(reasonPhrase)"
     }
 
     var reasonPhrase: String {
