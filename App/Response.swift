@@ -1,6 +1,5 @@
 import Nest
 
-
 enum Method: String {
     case Get = "GET"
     case Post = "POST"

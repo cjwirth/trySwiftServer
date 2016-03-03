@@ -3,7 +3,7 @@ import Nest
 typealias Handler = (RequestType throws -> ResponseType)
 
 class Router {
-    var routes: [String: [Method: Handler]] = [:]
+    private var routes: [String: [Method: Handler]] = [:]
 
     func route(method: Method, path: String, handler: Handler) {
         if let existing = routes[path] {
@@ -17,7 +17,7 @@ class Router {
 
     func handle(request: RequestType) -> ResponseType {
         // TODO: Get URL Parameter Parsing
-        // eg: /users/:id --> will have a String parameter called "id"
+        // eg. /users/:id --> will have a String parameter called "id"
         guard let method = request.HTTPMethod,
             let route = routes[request.path]?[method] else {
                 return Error.NotImplemented

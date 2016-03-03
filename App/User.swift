@@ -1,10 +1,10 @@
 import Jay
 
-class User: Jsonable {
+struct User: Jsonable {
     let name: String
     let email: String
 
-    required init(name: String, email: String) {
+    init(name: String, email: String) {
         self.name = name
         self.email = email
     }
@@ -16,7 +16,7 @@ class User: Jsonable {
         ]
     }
 
-    static func deserialized(json: JsonObject) throws -> Self {
+    static func deserialized(json: JsonObject) throws -> User {
         guard
             let nameJson = json["name"],
             let emailJson = json["email"],
