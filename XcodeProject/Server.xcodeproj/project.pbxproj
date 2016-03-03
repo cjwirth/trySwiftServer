@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB25F45C1C885E9F005DE67C /* ResourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB25F45B1C885E9F005DE67C /* ResourceController.swift */; };
 		FB69B1471C86DD68001625CC /* libCurassow.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB69B1431C86DD68001625CC /* libCurassow.dylib */; };
 		FB69B1481C86DD68001625CC /* libInquiline.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB69B1441C86DD68001625CC /* libInquiline.dylib */; };
 		FB69B1491C86DD68001625CC /* libJay.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB69B1451C86DD68001625CC /* libJay.dylib */; };
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB25F45B1C885E9F005DE67C /* ResourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceController.swift; path = ../App/ResourceController.swift; sourceTree = SOURCE_ROOT; };
 		FB69B1321C86DD43001625CC /* Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Server; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB69B1431C86DD68001625CC /* libCurassow.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCurassow.dylib; path = ../.build/debug/libCurassow.dylib; sourceTree = "<group>"; };
 		FB69B1441C86DD68001625CC /* libInquiline.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libInquiline.dylib; path = ../.build/debug/libInquiline.dylib; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				FB7CCFA81C86DDC500BC5114 /* Response.swift */,
 				FB7CCFB31C86E28000BC5114 /* Router.swift */,
 				FB7CCFAD1C86E14700BC5114 /* User.swift */,
+				FB25F45B1C885E9F005DE67C /* ResourceController.swift */,
 			);
 			path = Server;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7CCFA91C86DDC500BC5114 /* Json.swift in Sources */,
+				FB25F45C1C885E9F005DE67C /* ResourceController.swift in Sources */,
 				FB7CCFAE1C86E14700BC5114 /* User.swift in Sources */,
 				FB7CCFAB1C86DDC500BC5114 /* Response.swift in Sources */,
 				FB7CCFB41C86E28000BC5114 /* Router.swift in Sources */,

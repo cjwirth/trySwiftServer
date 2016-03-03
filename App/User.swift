@@ -1,8 +1,10 @@
 import Jay
 
-struct User: Jsonable {
-    let name: String
-    let email: String
+struct User: Model {
+    static let modelName = "users"
+
+    var name: String
+    var email: String
 
     init(name: String, email: String) {
         self.name = name

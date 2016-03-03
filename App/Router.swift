@@ -45,3 +45,14 @@ extension Router {
         self.route(.Delete, path: path, handler: handler)
     }
 }
+
+
+extension Router {
+
+    func resource<T: Model>(controllerType: ResourceController<T>.Type) {
+        let controller = controllerType.init()
+        get("/\(T.modelName)", handler: controller.index)
+        post("/\(T.modelName)", handler: controller.create)
+    }
+
+}
