@@ -1,31 +1,30 @@
 import Nest
 import Curassow
 
+var pokedex: [Pokemon] = [
+    Pokemon(name: "Bulbasaur", description: "Bulbasaur can be seen napping in bright sunlight."),
+    Pokemon(name: "Charmander", description: "The flame that burns at the tip of its tail is an indication of its emotions."),
+    Pokemon(name: "Squirtle", description: "Squirtle's shell is not merely used for protection.")
+]
 
-var users: [User] = [
-    User(name: "Caesar", email: "cjwirth@gmail.com"),
-    User(name: "Carlos", email: "carlos@deathstar.com")
+var trainers: [Trainer] = [
+    Trainer(name: "Tom Oliver", memo: "日本語、お上手ですね")
 ]
 
 let router = Router()
-router.get("/users") { request in
-    let usersJson = try users.jsonString()
+router.get("/pokemon") { request in
+    let usersJson = try pokedex.jsonString()
     return Response(status: .OK, body: usersJson)
 }
 
-router.post("/users") { request in
+router.post("/pokemon") { request in
     guard let json = request.body,
-        let user = try User.deserialize(json).first else {
+        let user = try Pokemon.deserialize(json).first else {
         return Error.BadRequest
     }
 
-    users.append(user)
+    pokedex.append(user)
     return Response(status: .OK, body: try user.jsonString())
 }
-
-router.get("/secret", handler: SecretPasswordAuthMiddleware({ request in
-    return Response(status: .OK, body: "Glad to see you know the password!")
-}))
-
 
 serve(router.handle)

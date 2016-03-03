@@ -14,7 +14,7 @@
 		FB7CCFA91C86DDC500BC5114 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFA61C86DDC500BC5114 /* Json.swift */; };
 		FB7CCFAA1C86DDC500BC5114 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFA71C86DDC500BC5114 /* main.swift */; };
 		FB7CCFAB1C86DDC500BC5114 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFA81C86DDC500BC5114 /* Response.swift */; };
-		FB7CCFAE1C86E14700BC5114 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFAD1C86E14700BC5114 /* User.swift */; };
+		FB7CCFAE1C86E14700BC5114 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFAD1C86E14700BC5114 /* Pokemon.swift */; };
 		FB7CCFB21C86E24A00BC5114 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFB11C86E24A00BC5114 /* Middleware.swift */; };
 		FB7CCFB41C86E28000BC5114 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CCFB31C86E28000BC5114 /* Router.swift */; };
 /* End PBXBuildFile section */
@@ -40,7 +40,7 @@
 		FB7CCFA61C86DDC500BC5114 /* Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Json.swift; path = ../App/Json.swift; sourceTree = SOURCE_ROOT; };
 		FB7CCFA71C86DDC500BC5114 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../App/main.swift; sourceTree = SOURCE_ROOT; };
 		FB7CCFA81C86DDC500BC5114 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = ../App/Response.swift; sourceTree = SOURCE_ROOT; };
-		FB7CCFAD1C86E14700BC5114 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../App/User.swift; sourceTree = SOURCE_ROOT; };
+		FB7CCFAD1C86E14700BC5114 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pokemon.swift; path = ../App/Pokemon.swift; sourceTree = SOURCE_ROOT; };
 		FB7CCFB11C86E24A00BC5114 /* Middleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Middleware.swift; path = ../App/Middleware.swift; sourceTree = SOURCE_ROOT; };
 		FB7CCFB31C86E28000BC5114 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = ../App/Router.swift; sourceTree = SOURCE_ROOT; };
 		FB7CCFB51C86E77300BC5114 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 				FB7CCFB11C86E24A00BC5114 /* Middleware.swift */,
 				FB7CCFA81C86DDC500BC5114 /* Response.swift */,
 				FB7CCFB31C86E28000BC5114 /* Router.swift */,
-				FB7CCFAD1C86E14700BC5114 /* User.swift */,
+				FB7CCFAD1C86E14700BC5114 /* Pokemon.swift */,
 			);
 			path = Server;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7CCFA91C86DDC500BC5114 /* Json.swift in Sources */,
-				FB7CCFAE1C86E14700BC5114 /* User.swift in Sources */,
+				FB7CCFAE1C86E14700BC5114 /* Pokemon.swift in Sources */,
 				FB7CCFAB1C86DDC500BC5114 /* Response.swift in Sources */,
 				FB7CCFB41C86E28000BC5114 /* Router.swift in Sources */,
 				FB7CCFB21C86E24A00BC5114 /* Middleware.swift in Sources */,
