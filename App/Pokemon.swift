@@ -29,7 +29,7 @@ struct Pokemon: Jsonable {
     }
 }
 
-struct Trainer: Jsonable {
+struct Trainer {
     var name: String
     var memo: String
 }

@@ -12,19 +12,31 @@ var trainers: [Trainer] = [
 ]
 
 let router = Router()
+let server = router.handle
+
 router.get("/pokemon") { request in
-    let usersJson = try pokedex.jsonString()
-    return Response(status: .OK, body: usersJson)
+    let pokemonJson = try pokedex.jsonString()
+    return Response(status: .OK, body: pokemonJson)
 }
 
 router.post("/pokemon") { request in
-    guard let json = request.body,
-        let user = try Pokemon.deserialize(json).first else {
+    guard let json = request.body else {
         return Error.BadRequest
     }
 
-    pokedex.append(user)
-    return Response(status: .OK, body: try user.jsonString())
+    let pokemon: Pokemon
+    do {
+        if let deserialized = try Pokemon.deserialize(json).first {
+            pokemon = deserialized
+        } else {
+            return Error.BadRequest
+        }
+    } catch {
+        return Error.BadRequest
+    }
+
+    pokedex.append(pokemon)
+    return Response(status: .OK, body: try pokemon.jsonString())
 }
 
-serve(router.handle)
+serve(server)
