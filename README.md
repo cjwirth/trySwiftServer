@@ -1,7 +1,6 @@
-# Soaring Swiftly
-## Server Side Swift
+# Soaring Swiftly - Server Side Swift
 
-Caesar Wirth, March 4, 2016, try! Swift, Tokyo, Japan
+March 4, 2016 at try! Swift in Tokyo, Japan
 
 This is the sample code that I put together for my talk. 
 I also have the slides included, that includes the information for deploying to heroku.
